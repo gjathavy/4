@@ -113,7 +113,7 @@ const Contact = () => {
                   <Input
                     id="name"
                     name="name"
-                    placeholder="Enter your name" // updated placeholder
+                    placeholder="Type your name(Ex: Jathavy Ganeshalingam)" 
                     value={formData.name}
                     onChange={handleInputChange}
                   />
@@ -124,7 +124,7 @@ const Contact = () => {
                     id="email"
                     name="email"
                     type="email"
-                    placeholder="Enter your email@example.com" // updated placeholder
+                    placeholder="Enter your email (Ex: gjathavy@gmail.com)" // updated placeholder
                     value={formData.email}
                     onChange={handleInputChange}
                   />
