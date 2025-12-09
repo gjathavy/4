@@ -113,7 +113,7 @@ const Contact = () => {
                   <Input
                     id="name"
                     name="name"
-                    placeholder="John Doe"
+                    placeholder="Enter your name" // updated placeholder
                     value={formData.name}
                     onChange={handleInputChange}
                   />
@@ -124,7 +124,7 @@ const Contact = () => {
                     id="email"
                     name="email"
                     type="email"
-                    placeholder="john@example.com"
+                    placeholder="Enter your email@example.com" // updated placeholder
                     value={formData.email}
                     onChange={handleInputChange}
                   />
@@ -223,3 +223,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
