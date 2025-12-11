@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ExternalLink, Github, Cpu, Globe, Box } from 'lucide-react';
+import { ExternalLink, Github, Cpu, Globe } from 'lucide-react';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -137,17 +137,7 @@ const Projects = () => {
               </CardContent>
 
               <CardFooter className="gap-3">
-                {project.githubUrl && (
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="gap-2"
-                    onClick={() => window.open(project.githubUrl, '_blank')}
-                  >
-                    <Github className="h-4 w-4" />
-                    View Code
-                  </Button>
-                )}
+                {/* Live Demo Button (if exists) */}
                 {project.liveUrl && (
                   <Button
                     size="sm"
@@ -168,3 +158,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
